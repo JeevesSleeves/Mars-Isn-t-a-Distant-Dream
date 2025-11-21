@@ -71,20 +71,24 @@
         margin-top: 40px;
     }
     /* SIDE NAVIGATION */
+/* SIDE NAVIGATION */
 .side-nav {
-    position: sticky;
-    top: 120px;                 /* below header */
-    left: 20px;                 /* distance from left edge */
-    width: 220px;               /* nav width */
+    position: absolute;
+    top: calc(60px + 2.8rem + 40px); 
+    /* header padding-top + h1 height + extra spacing */
+
+    left: 20px;
+    width: 220px;
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-height: 70vh;          /* keeps it from being too tall */
-    overflow-y: auto;          /* scroll inside box if needed */
+    max-height: 70vh;
+    overflow-y: auto;
     z-index: 1000;
 }
+
 
 .side-nav h3 {
     font-family: 'Georgia', serif;
